@@ -13,7 +13,10 @@ Within CIPP, there are two types of alerts.
 
 Similar to [Tenant Standards](../standards/edit-standards.md#meet-the-standards), you configure alerts using the wizard to select one or more tenants or -All Tenants- to apply alerts globally, then select from the list of available alerts.
 
-Alert email delivers to the email address or webhook provided in CIPP settings. Alerts are delivered as an HTML-formatted table. Alerts fire once per incident - for example, a full mailbox does not fire an alert every time it's checked.
+Alert email delivers to the email address or webhook provided in CIPP settings. Alerts are delivered as an HTML-formatted table.
+Audit log alerts fire once per incident.
+Scripted alerts check on the interval that you define. If the condition is still present, it creates a new alert
+For example, a new rule created in a mailbox does not fire an alert every time it's checked, whereas a full mailbox will keep generating alerts for as long as the condition persists.
 
 {% hint style="info" %}
 Scripted CIPP Alerts runtimes are configurable from 30 minutes to up to 1 week.
